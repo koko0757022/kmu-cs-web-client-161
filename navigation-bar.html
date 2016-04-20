@@ -1,17 +1,46 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <title>navigation bar</title>
-  <meta charset="utf-8">
 </head>
+<style>
+li{
+display: inline;
+font-family: Nanum Gothic;
+font-size: 20px;
+}
+
+li a{
+display: inline-block;
+color: #483535;
+padding: 30px;
+text-decoration: none;
+}
+
+li a:hover{
+	 color:#7e0213; background:url('hover-icon.png') no-repeat ;
+}
+
+.zindex {
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 140px;
+z-index: -1;
+}
+
+</style>
 <body>
-  <ul>
+   <img class="zindex" src="nav-bar-bg.png"> 
+  <ul> 
     <li><a href="#intro">축제소개</a></li>
     <li><a href="#festival">행사소개</a></li>
     <li><a href="#tour">관광정보</a></li>
     <li><a href="#coupon">할인쿠폰</a></li>
     <li><a href="#direction">오시는길</a></li>
-    <li><a href="#tips">알아두면좋아요</a></li>
+    <li><a href="#tips">알아두면좋아요</a></li> 
   </ul>
+  
 </body>
 </html>

@@ -5,13 +5,45 @@
   <style>
     p {
       border: 1px solid red;
+   }
+    .fixed {
+      position: fixed;
+      bottom: 0px;
+      right: 0px;
+      width: 120px;
+     
+    }
+    .fixed2 {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 130px;
+     
+    }
+ .static3 {
+      position: static;
+      top: 0px;
+      left: 0px;
+      
+      margin-top : 50px;
+      margin-left : 10px;
+     
+    }
+ .static4 {
+      position: static;
+      top: 0px;
+      left: 0px;      
+      
+      margin-left : 10px;
+
+     
     }
   </style>
 </head>
 <body>
-  <p>First paragraph</p>
-  <p>Second paragraph</p>
-  <p>Third paragraph</p>
-  <p>Fourth paragraph</p>
+  <p class = "fixed">First paragraph</p>
+  <p class ="static3">Second paragraph</p>
+  <p class ="static4">Third paragraph</p>
+  <p class="fixed2">Fourth paragraph</p>
 </body>
 </html>

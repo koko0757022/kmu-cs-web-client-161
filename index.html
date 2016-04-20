@@ -4,36 +4,47 @@
     <title>The real first homework</title>
   </head>
   <body>
-    <p style="font-size:200%;" id="kmu-id">KMU ID:</p>
-    <p style="font-size:200%;">Name:</p>
+    <p style="font-size:200%;" id="kmu-id">KMU ID: 20145331</p>
+    <p style="font-size:200%;">Name: 임동환오후 10:39 2016-04-17</p>
     <p style="font-size:150%;">This homework helps you to apply CSS skills that you learned during the class with pratical problem sets. The answer should be written in a valid HTML and CSS form that should be rendered in <strong>Chrome</strong> browser. You can write answers in Korean. <strong>The score for this homework will take twice more portion than the first homework</strong>. If you have difficulties in understanding the question, please let me know. <a href = "kmu-cs-web-client- 161.slack.com">Slack</a> or <a href="mailto:leeky@kookmin.ac.kr">E-mail</a> <br>This homework has to be submitted by <time datetime="2016-04-21T16:30">April 21st. class time</time>, and the solution will be provided during the class. No late submission is allowed this time due to the midterm.</p>
     <h1>Understanding CSS Concepts</h1>
     <ol>
-      <li>Describe difference between HTML and CSS with respect to the <em>roles</em> they take in a web page? (5 point)</li>
-      <div>Answer:
+      <li>Describe difference between HTML and CSS with respect to the <em>roles</em> they take in a web page? (5 point)</li> 
+      <div>Answer:둘다 웹문서를 만들때 사용한다는 공통점은 있지만 HTML은 웹문서의 구조와 내용을 가지며 css는 HTML로 작성된 웹문서의 보여지는 부분을 어떻게 보이게 할 것인지를 디자인하는 언어이다.
       </div>
-      <li>CSS stands for Cascading Style Sheet, what does <em>Cascading</em> means? (5 point)</li>
+      <li>CSS stands for Cascading Style Sheet, what does <em>Cascading</em> means? (5 point)</li>  하나의 문서에 여러개의 스타일시트를 동시에 적용시킬 수 있는데 이때 같은 엘리먼트에 서로 다른 스타일이 정의될 수있게하는것을
+cascade라고 한다
       <li>List <em>three different methods</em> to use CSS with a HTML document and write a brief decription how to use it(5 point)</li>
-      <div>Answer:
+      <div>Answer:external,inline,internal 3가지 방법이있는데 external은 link를통해서 css문서를 불러들여 사용하고 internal은 html문서의  head style tag 안에다가 효과 적용시키는것이고
+	inline 은 start tag의 하나의 elemnet에 추가해서 효과를 내는방식이다.
       </div>
       <li>For the three different methods discussed at the previous problem, describe pros and cons (advantage and disadvantages) of them comparing with others(10 point)</li>
-      <div>Answer:
+      <div>Answer:external을 사용하게되면 inline과 internal비해 html의 size를 줄일 수 있고 자주사용하는 효과를 필요할때마다 불러와서 사용할수있어서 편리하다.
+		internal을 사용할경우 수정시 태그에서 직접 하는 것이 아니라 스타일 정의에서 하는것이라 작업이 용이 합니다. 하지만 html의 size가 커질 우려가있습니다.
+		inline을 사용할 경우 쉽게쉽게 적용할수있으나 external과 internal에 사용된 css 파일들을 overriding할수있다.
       </div>
       <li>When we want to set font style using CSS, we can set generic family and font family. What are the difference between them?(5 point) Which one is recommended to state as a last option to show in a web-page? (5 point)</li>
-      <div>Answer:
+      <div>Answer: generic family는 보기에 비슷하게 생긴 녀석들의 집합체이고 value값에 해당한다 (즉 글꼴 유형들이다)  font-family는 문서에 사용할 font를 명시하는 property 이다   //generic family를 사용
       </div>
       <li>When we want to control space of an element, we can use <em>padding</em> and <em>margin</em>. What are the difference between them?(5 point)</li>
-      <div>Answer:
+      <div>Answer:padding은 개채의 안쪽 여백을 조절할때 사용하고 margin은 개체의 바깥쪽여백을 조절할때 사용합니다.
       </div>
       <li>When we set font size using CSS, we can use units of <em>em, %, px</em>. How are they different? (5 point)</li>
-      <div>Answer:
+      <div>Answer:em은 %를 간단히 표현한것인데 em은 실수 0~ 1을 사용한다 예를들어 50%이면 0.5em을 뜻하고 font 크기를 1em이 100% 이고 px로 따지면16px가 됩니다 즉)사용하는 단위가다릅니다.
       </div>
       <li>There are four ways to set conditional property for a sequence of elements (parent-child, siblings) - we called it as <em>Combinator</em> in the class. Describe the name of the four combinators with brief descripton and give a short example (10 point)</li>
+		descendant,child,adjacent sibling,general sibling 4가지가 있는데 descendant는 부모 자식 관계에서 자손모두를 선택하는것이다. (ex :   div p { background-color: yellow;} ...  div안에 모든 요소(p , span)들이 선택된다가 선택된다 )
+		child는 자식만을 선택하는것이다  (ex : div > p {background-color : yellow;} p만선택하게된다) ,   djacent sibling 은 구체화된 요소의 근접한 형제 자매인 모든 요소들을 선택한다 형제 요소들은 같은 부모요소를 가져야만한다. (ex : div + p { background-color: yellow;}
+ 		general sibling 은 형제중에 매칭되는 모든형제를 선택하는것으로(ex : div  ~  p {background-color : yellow;   div태그의 형제들중 p태그는 모두 선택해서 바탕색을 노란색으로 만들어라.}
+
+
     </ol>
 
     <h1>Make an aesthetic web page using CSS</h1>
+
     <ol>
       <li>Open <a href="border-shorthand.html">border-shorthand.html</a> and fill the <em>border-single</em> class to have the second div element to have the same effect with the first div element. <strong>You can use only one element in the border-single CSS class</strong>. (2 point) </li>
+		border:red 2px double
       <li>Open <a href="last-paragraph.html">last-paragraph.html</a> and fill in the <i>style</i> tag to make only the last paragraph (the third one) to have the following effects(5 point)
         <ul>
           <li>Make the font color as red</li>
